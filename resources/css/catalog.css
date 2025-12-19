@@ -1,0 +1,1682 @@
+html,
+body {
+    height: 100%;
+    position: realtive;
+    display: flex;
+    flex-direction: column;
+    scroll-behavior: smooth;
+}
+body {
+    height: 100%;
+    position: realtive;
+    flex-direction: column;
+    background-color: #0a0a0a;
+}
+header {
+    display: inline;
+}
+header div {
+    margin-left: 73px;
+    float: left;
+    position: relative;
+    margin-top: 57px;
+    filter: drop-shadow(0px 4px 6px rgba(0, 0, 0, 0.25));
+}
+header div img {
+    margin-inline: 9px;
+    border-radius: [object Object]px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+header div img:hover {
+    transform: scale(1.1); /* увеличиваем размер картинки на 10% */
+}
+
+header nav {
+    float: right;
+}
+
+nav {
+    margin-top: 98px;
+    display: inline;
+    flex-direction: row;
+    float: right;
+    margin-right: 106px;
+}
+nav a {
+    display: inline;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none; /*Убираем стандартное подчёркивание ссылки если оно ещё не убрано*/
+    color: #fafafa;
+}
+nav a:after {
+    display: block; /*превращаем его в блочный элемент*/
+    content: ""; /*контента в данном блоке не будет поэтому в кавычках ничего не ставим*/
+    height: 1px; /*задаём высоту линии*/
+    width: 0%; /*задаём начальную ширину элемента (линии)*/
+    background-color: #fafafa; /*цвет фона элемента*/
+}
+
+.main_bootom_pictures{
+    width: 400px;
+}
+
+.img_main {
+    background-color: #0a0a0a;
+    height: 1000px;
+}
+
+.greenscreen {
+    min-height: 143.7px;
+    margin-top: 43px;
+    margin-bottom: 43px;
+    display: block;
+    position: relative;
+    width: 100%;
+    height: 143.7px;
+    background: #a16915;
+    text-align: center;
+    /* overflow:hidden; */
+}
+.greenscreen h1 {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 48px;
+    line-height: 59px;
+    text-transform: uppercase;
+    color: #fafafa;
+    margin: 42px;
+}
+nav a:hover:after,
+nav a:focus:after {
+    width: 100%;
+}
+
+.custom-block {
+    width: 200px; /* Ширина блока */
+    height: 250px; /* Высота блока */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+    color: #fafafa; /* Цвет текста */
+}
+
+.custom-block h2 {
+    font-family: "Hoefler Text";
+    margin: 0;
+    font-size: 23px; /* Размер заголовка */
+}
+
+.custom-block p {
+    margin: 10px 0 0 0;
+    font-size: 16px; /* Размер текста */
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+}
+nav li {
+    display: inline-block;
+    margin-inline: 22px;
+}
+.menucactalog {
+    justify-content: center;
+    display: flex;
+    flex-direction: row;
+    margin: 10px;
+}
+
+.col {
+    display: flex;
+    flex-direction: column;
+}
+
+.menucactalog .col {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.horiz {
+    display: flex;
+    flex-direction: row;
+}
+
+.image-container {
+    width: 400px;
+    position: relative;
+    margin: 25px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+
+.image-container img {
+    width: 100%;
+    display: block;
+}
+
+.menucactalog_text {
+    font-family: "Avenir Next Cyr";
+    position: absolute;
+    bottom: 8px;
+    left: 16px;
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7); /* добавляет тень для лучшей читаемости текста */
+}
+
+.image-container:hover {
+    transform: scale(1.1); /* увеличиваем размер контейнера с картинкой на 10% */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* добавляем тень */
+}
+.section_name {
+    font-family: "Hoefler Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    text-transform: uppercase;
+    color: #fafafa;
+}
+.line {
+    /* justify-content: center; */
+    /* justify-self: center; */
+    margin-top: 15px;
+    position: relative;
+    width: 475px;
+    min-width: 475px;
+    min-height: 1px;
+    height: 1px;
+    background-color: #fafafa;
+    /* border: 1px solid #fafafa; */
+}
+.product {
+    /* justify-content: center; */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin-top: 82px;
+}
+/* .add_to_display_right{
+
+} */
+.itemcardback {
+    background: #494949;
+    min-width: 323px;
+    min-height: 464px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    padding: 0px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+    /* overflow: visible; */
+}
+#trashicon {
+    /* display:block; */
+    display: inline-block;
+
+    /* float:right; */
+    width: 86px;
+    height: 86px;
+    /* overflow: visible; */
+    overflow-clip-margin: content-box;
+    overflow: clip;
+    /* background-position: top right; */
+
+    /* position:top right ; */
+}
+.itemcardback:hover {
+    box-shadow: 0 0 40px #a16915;
+}
+/* .itemcardback img{
+    margin:18px;
+    max-width: 287px;
+    max-height: 264px;
+    min-width: 287px;
+    min-height: 264px;
+    border: 1px solid #0a0a0a;
+
+} */
+.itempic {
+    align-self: center;
+    margin: 20px;
+    max-width: 287px;
+    max-height: 264px;
+    min-width: 287px;
+    min-height: 264px;
+    /* overflow: hidden; */
+    border: 1px solid #0a0a0a;
+}
+#discription {
+    display: flex;
+    flex-direction: column;
+}
+#discription h1 {
+    text-align: left;
+    float: left;
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #fafafa;
+}
+#discription p {
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 263px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #fafafa;
+}
+.add_to_cart h2 {
+    float: left;
+    width: 133px;
+    height: 40px;
+    margin-left: 29px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #fafafa;
+}
+.choose_amount {
+    /* float:right; */
+    display: inline;
+    justify-content: center;
+}
+.choose_amount button {
+    margin: 0px;
+}
+.choose_amount h3 {
+    margin: 0px;
+    padding: 0px;
+    /* display: block; */
+}
+.add_to_cart {
+    display: inline-block;
+}
+.add_to_cart button {
+    /* width: 116px;
+    height: 40px; */
+    width: fit-content;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background: #a16915;
+    box-shadow: 0px 4px 11px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    float: right;
+    margin-top: 22px;
+    margin-bottom: 22px;
+    margin-right: 25px;
+
+    font-family: "Hoefler Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fafafa;
+    border: none;
+}
+
+.item_block {
+    /* margin-left: 165px;
+    margin-right: 165px; */
+    justify-content: center;
+    margin-top: 73px;
+    display: flex;
+    flex-wrap: wrap;
+    width: 90%;
+}
+.scroll-to-top-button {
+    position: fixed; /* задайте фиксированную позицию для кнопки */
+    bottom: 50px; /* задайте отступ от нижнего края страницы */
+    right: 50px; /* задайте отступ от правого края страницы */
+    display: none; /* скройте кнопку по умолчанию */
+    /* Добавьте другие свойства по вашему усмотрению */
+
+    width: 134px;
+    height: 63px;
+    background: #a16915;
+    box-shadow: 2px 4px 7px 1px rgba(0, 0, 0, 0.25);
+    border-radius: 50px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    border: none;
+    text-transform: uppercase;
+
+    color: #fafafa;
+}
+button {
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+button:hover {
+    transform: scale(1.1); /* увеличиваем размер картинки на 10% */
+}
+footer {
+    /* margin-top: 200px; */
+    bottom: 0px;
+    text-align: center;
+    display: flex;
+    min-height: 251px;
+    min-width: 100%;
+    background: #a16915;
+    justify-content: center;
+    flex-direction: column;
+    /* display:flex; */
+}
+footer h1 {
+    align-self: center;
+    width: 207px;
+    height: 28px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: bold;
+    font-size: 22px;
+    line-height: 27px;
+    text-align: center;
+    text-transform: uppercase;
+
+    color: #fafafa;
+}
+
+footer h2 {
+    margin-inline: 100px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    width: 401px;
+
+    color: #fafafa;
+}
+footer container {
+    /* display:inline-block; */
+    display: flex;
+    justify-content: center;
+    margin-top: 20px;
+    /* bottom: 73px; */
+}
+article h1 {
+    font-family: "Hoefler Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 115%;
+    /* or 46px */
+
+    /* display: flex; */
+    align-items: center;
+    text-align: center;
+    letter-spacing: -0.025em;
+    margin-bottom: 11px;
+    margin-top: 84px;
+    /* padding-bottom: 0px; */
+
+    color: #fafafa;
+}
+article h2 {
+    margin: 0px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 0.22em;
+
+    color: #fafafa;
+}
+.inf_about_brand_main {
+    margin-top: 68px;
+    display: flex;
+    /* min-width:100%;
+    max-width:100%; */
+    width: 100%;
+    flex-direction: raw;
+    /* margin-inline: 63px; */
+    /* justify-content: center;
+    align-items: center; */
+    justify-content: space-between;
+}
+.inf_about_brand_main img {
+    float: right;
+    margin-right: 150px;
+
+    /* margin-left: 63px; */
+}
+.back_main div {
+    float: left;
+}
+.back_main {
+    min-width: 653px;
+    min-height: 824px;
+    max-width: 653px;
+    max-height: 824px;
+    background: #a16915;
+
+    /* padding-left:94px;
+    padding-top: 94px; */
+    display: flex;
+
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.back_main h1 {
+    max-width: 486px;
+    margin-top: 40px;
+    margin-bottom: 30px;
+
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: medium;
+    font-size: 13px;
+    line-height: 16px;
+    font-variant: small-caps;
+
+    color: #fafafa;
+}
+.back_main p {
+    width: 466px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    font-variant: small-caps;
+
+    color: #fafafa;
+}
+.greyback_main {
+    position: relative;
+    width: 100%;
+    min-height: 144px;
+    max-height: 144px;
+    background: #494949;
+    /* margin-top: 172px; */
+    display: flex;
+    justify-content: center;
+    /* justify-items:baseline; */
+    /* overflow: visible; */
+}
+#pluses_main {
+    margin-top: 143px;
+}
+.plus_pic {
+    /* align-items: center; */
+    /* align-content: center; */
+    align-self: center;
+    position: relative;
+    width: 80%;
+    display: flex;
+    justify-content: center;
+    overflow: visible;
+}
+.plus_pic img {
+    margin-inline: 100px;
+}
+
+.pop_items {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-top: 64px;
+}
+.pop_items h1 {
+    font-family: "Hoefler Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 40px;
+    text-align: center;
+    margin-bottom: 0px;
+
+    color: #fafafa;
+}
+/* .itemcardback_popitems_main{
+    background: #a16915;
+    min-width: 323px;
+    min-height: 464px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    padding:0px;
+} */
+#greyback {
+    width: 100%;
+    height: 103.96px;
+    background: #494949;
+    margin-top: 204px;
+    /* display: flex;
+  align-items: center;
+  justify-content: center; */
+}
+#greyback h1 {
+    text-align: center;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    font-variant: small-caps;
+    padding-top: 37px;
+    color: #fafafa;
+}
+
+#contactline {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 32px;
+    line-height: 32px;
+    text-align: center;
+    margin: 0px;
+    color: #1e1512;
+    white-space: none;
+}
+#new {
+    margin-bottom: 150px;
+}
+#boxes {
+    margin-bottom: 150px;
+}
+.about_pic_inf {
+    position: relative;
+    margin-top: 62px;
+}
+#aboutright {
+    position: absolute;
+    width: 343px;
+    height: 343px;
+    right: 60px;
+    top: 227px;
+}
+#aboutleft {
+    position: absolute;
+    width: 515px;
+    height: 649px;
+    left: 60px;
+    top: 319px;
+}
+
+#abouttext {
+    position: absolute;
+    width: 711px;
+    height: 318.41px;
+    left: calc(50% - 711px / 2 + 77.5px);
+    top: 523px;
+}
+.inf_about_brand_aboutpage {
+    position: relative;
+    margin-left: 140px;
+    margin-top: 40px;
+    margin-bottom: 78px;
+    margin-right: 140px;
+}
+.inf_about_brand_aboutpage h1 {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-variant: small-caps;
+    margin-bottom: 28px;
+    color: #fafafa;
+}
+.inf_about_brand_aboutpage p {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    font-variant: small-caps;
+    margin: 0px;
+    color: #fafafa;
+}
+.inf_about_brand_aboutpage h2 {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 24px;
+    font-variant: small-caps;
+    margin-top: 38px;
+    color: #fafafa;
+}
+
+.left_right_pic_about_main {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    object-fit: cover;
+    /* object-fit: scale-down; */
+    /* object-fit: unset; */
+    margin: 60px;
+}
+.left_right_pic_about_main infabout {
+    align-self: center;
+    overflow: visible;
+}
+#textaboutbrand {
+    margin-top: 200px;
+    width: 711px;
+    height: 318.41px;
+    background: #bb7306;
+}
+#textaboutbrand p {
+    /* margin:60px; */
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 13px;
+    line-height: 16px;
+    font-variant: small-caps;
+    padding: 60px;
+    color: #fafafa;
+}
+#handaboutbrand {
+    align-self: self-start;
+    margin-top: 92px;
+    z-index: 1;
+    /* order: 1; */
+    overflow: scroll;
+}
+#chestaboutbrand {
+    align-self: self-start;
+    overflow: scroll;
+    /* order: 3; */
+    z-index: 3;
+}
+#contactmain p {
+    margin-left: 40px;
+    width: 486px;
+    height: 157px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    letter-spacing: 0.005em;
+
+    color: #fafafa;
+}
+#contactmain a {
+    font-weight: bold;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+#contactmain a:hover {
+    color: #a16915;
+}
+
+#contactmain {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    margin-left: 150px;
+    background-image: url(../img2/guitar_contact.jfif);
+    background-repeat: no-repeat;
+    background-position: top right;
+    margin-right: 90px;
+    margin-top: 28px;
+}
+#contactform {
+    width: 823px;
+    /* height: 646px; */
+    height: fit-content;
+    padding-bottom: 40px;
+    background: #0a0a0a;
+    box-shadow: 4px 4px 39px 8px #a16915;
+    border-radius: 62px;
+    align-items: center;
+    align-content: center;
+}
+#contactform p {
+    margin-left: 122px;
+    margin-right: 122px;
+    margin-top: 70px;
+    margin-bottom: 0px;
+    text-align: center;
+    position: relative;
+    width: 579px;
+    height: 81px;
+    padding-bottom: 4px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    letter-spacing: 0.005em;
+
+    color: #fafafa;
+}
+.inputcontact {
+    /* align-self: center; */
+    position: relative;
+    margin-top: 36px;
+    width: 473px;
+    height: 62px;
+    left: 166px;
+    border: none;
+    background: #0a0a0a;
+    box-shadow: 0px 4px 14px 3px #815615;
+    border-radius: 54px;
+}
+:placeholder-shown {
+    padding-left: 51px;
+    border: none;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-overflow: ellipsis;
+    color: #fafafa;
+}
+.butcontact {
+    align-self: center;
+    position: relative;
+    /* width: 176px; */
+    /* height: 82px; */
+    text-transform: uppercase;
+    width: fit-content;
+    height: fit-content;
+    padding: 29px;
+    margin-top: 40px;
+    margin-bottom: 40px;
+    margin-inline: 16px;
+    background: #a16915;
+    box-shadow: 0px 4px 14px -3px #fafafa;
+    border-radius: 54px;
+    border: none;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 24px;
+    color: #111;
+}
+input[type="text"] {
+    padding-left: 51px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+    text-overflow: ellipsis;
+    color: #fafafa;
+}
+
+.maps {
+    margin-top: 101px;
+    padding-bottom: 16px;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 538px;
+}
+.maps h1 {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    /* margin-left: 200px; */
+    color: #fafafa;
+}
+.cartproduct {
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-top: 55px;
+    margin-bottom: 93px;
+}
+.cart_item {
+    margin: 25px;
+
+    background: #494949;
+    border-radius: 20px;
+    width: fit-content;
+    height: 222px;
+    display: flex;
+    flex-direction: row;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.cart_item:hover {
+    box-shadow: 0 0 40px #a16915;
+
+    /* box-shadow: 10px 10px 10px -10px #a16915; */
+}
+.cart_item img {
+    border-radius: 20px;
+    width: 188px;
+    height: 173px;
+    margin: 25px;
+}
+.cart_item_discription {
+    display: flex;
+    flex-direction: column;
+    margin-top: 44px;
+    margin-bottom: 44px;
+}
+.price_amount_line {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    /* margin-inline: 39px; */
+}
+.price_amount_line h3 {
+    margin-left: 39px;
+
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 24px;
+    /* line-height: 39px; */
+    text-align: center;
+
+    color: #fafafa;
+}
+
+.cart_item_discription h1 {
+    text-align: left;
+    float: left;
+    margin: 0px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #fafafa;
+}
+.cart_item_discription p {
+    float: left;
+    width: 263px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #fafafa;
+}
+.cart_item_discription h2 {
+    margin: 0px;
+    float: left;
+    width: 133px;
+    height: 40px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #fafafa;
+}
+.cart_plus_minus {
+    position: relative;
+    display: flex;
+    align-self: center;
+}
+.cart_plus_minus img {
+    align-self: center;
+    width: 80px;
+    height: 80px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+.cart_plus_minus img:hover {
+    transform: scale(1.1);
+}
+.cart_plus_minus h1 {
+    align-self: center;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    width: fit-content;
+    line-height: 39px;
+    text-align: center;
+    color: #fafafa;
+}
+#trashicon {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.2s ease-in-out, box-shadow 0.2s ease-in-out;
+}
+#trashicon:hover {
+    transform: scale(1.4);
+}
+.greyback_main h1 {
+    align-self: center;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 36px;
+    line-height: 44px;
+    text-align: center;
+    margin-inline: 122px;
+    color: #fafafa;
+}
+.make_an_order_button {
+    width: fit-content;
+    height: fit-content;
+
+    padding: 20px;
+    border: none;
+    background: #a16915;
+    box-shadow: 0px 4px 11px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #fafafa;
+}
+.greyback_main a {
+    /* padding:0px; */
+    width: fit-content;
+    height: fit-content;
+    align-self: center;
+}
+.modal {
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #a1691546;
+    backdrop-filter: blur(20px);
+}
+.order_form {
+    align-content: center;
+    flex-direction: column;
+    justify-content: center;
+
+    align-self: center;
+}
+.modal-content {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+
+    display: flex;
+    flex-direction: column;
+
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background-color: #fefefe;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+    padding-bottom: 20px;
+
+    box-shadow: 0px 4px 14px 3px #a16915;
+    border-radius: 30px;
+    width: 60%;
+}
+
+.close {
+    color: #333333;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.modal-content p {
+    width: fit-content;
+    /* margin-left: 129px;
+    margin-right: 129px; */
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #fafafa;
+}
+.modal-content h1 {
+    text-align: center;
+    width: fit-content;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #fafafa;
+}
+.inputorderdetails {
+    /* align-self: center; */
+    position: relative;
+    margin-top: 36px;
+
+    width: 473px;
+    height: 62px;
+
+    border: none;
+    background: #0a0a0a;
+    box-shadow: 0px 4px 14px 3px #a16915;
+    border-radius: 54px;
+}
+.order_details {
+    margin: 34px;
+    padding-right: 47px;
+    padding-left: 47px;
+    padding-top: 25px;
+    padding-bottom: 30px;
+
+    background: #fefefe;
+    box-shadow: 0px 4px 14px 5px #a16915;
+    border-radius: 30px;
+    width: fit-content;
+    height: fit-content;
+    filter: drop-shadow(0px 4px 14px #a16915);
+}
+.order_details h1 {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 400;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #0a0a0a;
+}
+.order_details h2 {
+    min-width: 394px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #0a0a0a;
+}
+.modalcontent {
+    margin: 15% auto;
+    padding: 20px;
+    border: 1px solid #333;
+    width: 80%;
+}
+.profile_info {
+    margin-top: 65px;
+    margin-bottom: 65px;
+    margin-left: 155px;
+    margin-right: 155px;
+}
+.profile_info h1 {
+    width: fit-content;
+    height: fit-content;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 32px;
+    line-height: 39px;
+
+    color: #fafafa;
+}
+.order_card_background {
+    align-self: center;
+    background: #494949;
+    border-radius: 30px;
+    /* width: fit-content; */
+    min-width: fit-content;
+    width: 80%;
+    /* height: fit-content; */
+    margin: 25px;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.order_card_background:hover {
+    background: #0a0a0a;
+    box-shadow: 0 0 40px #a16915;
+
+    /* box-shadow: 10px 10px 10px -10px #a16915; */
+}
+.order_card_details {
+    text-overflow: ellipsis;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    padding: 67px;
+}
+.order_card_details h1 {
+    text-overflow: ellipsis;
+    margin-inline: 84px;
+    width: fit-content;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+    text-transform: uppercase;
+
+    color: #fafafa;
+}
+.my_orders {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin: 75px;
+}
+.my_orders a {
+    text-decoration: none;
+}
+.admin_orders_anchors {
+    margin: 69px;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.admin_orders_anchors img {
+    margin-inline: 52px;
+    border-radius: 20%;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.admin_orders_anchors img:hover {
+    box-shadow: 0 0 40px #a16915;
+}
+.order_block {
+    /* margin:20px; */
+    margin-left: 125px;
+    margin-right: 125px;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+.order_info_block {
+    margin-top: 80px;
+    margin-left: 85px;
+}
+.order_info_block h1 {
+    width: fit-content;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 24px;
+    line-height: 29px;
+
+    color: #fafafa;
+}
+.order_bottom {
+    display: flex;
+    justify-content: center;
+    padding-bottom: 150px;
+}
+.account_block {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+.account_block a {
+    /* margin: 0px; */
+    /* margin-bottom: 40px; */
+    text-decoration: none;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 750;
+    font-size: 20px;
+    line-height: 24px;
+
+    color: #fafafa;
+}
+#no_account {
+    margin-bottom: 40px;
+}
+.admin_catalog_itemcardback {
+    display: flex;
+    flex-direction: column;
+    background: #494949;
+
+    min-width: 323px;
+    min-height: 464px;
+    margin-right: 70px;
+    margin-bottom: 70px;
+    padding: 0px;
+    box-shadow: none;
+    transition: box-shadow 0.3s ease-in-out;
+}
+.admin_catalog_itemcardback:hover {
+    box-shadow: 0 0 40px #a16915;
+}
+.admin_catalog_discription {
+    display: flex;
+    flex-direction: column;
+}
+.admin_catalog_discription h1 {
+    text-align: left;
+    float: left;
+    margin-left: 54px;
+    margin-right: 54px;
+    margin-top: 4px;
+    margin-bottom: 12px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+
+    color: #fafafa;
+}
+.admin_catalog_discription p {
+    float: left;
+    margin-left: 30px;
+    margin-right: 30px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    width: 263px;
+    height: fit-content;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 20px;
+
+    color: #fafafa;
+}
+.admin_catalog_discription h2 {
+    width: fit-content;
+    float: left;
+    width: 133px;
+    height: 40px;
+    margin-left: 29px;
+    margin-bottom: 10px;
+    margin-top: 20px;
+
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 32px;
+    line-height: 39px;
+    text-align: center;
+    color: #fafafa;
+}
+.admin_catalog_discription h3 {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    margin-left: 34px;
+
+    width: fit-content;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+
+    color: #fafafa;
+}
+.admin_catalog_discription button {
+    width: fit-content;
+    height: fit-content;
+    padding-left: 20px;
+    padding-right: 20px;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    background: #a16915;
+    box-shadow: 0px 4px 11px -4px rgba(0, 0, 0, 0.25);
+    border-radius: 30px;
+
+    float: right;
+    margin: 10px;
+    text-transform: uppercase;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 600;
+    font-size: 16px;
+    line-height: 16px;
+    text-align: center;
+    color: #fafafa;
+    border: none;
+}
+.admin_catalog_buttons {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 30px;
+    margin-top: 10px;
+}
+.greenscreen button {
+    align-self: center;
+    margin: 0px;
+    margin-top: 29px;
+    margin-bottom: 29px;
+    text-transform: uppercase;
+    background: #fefefe;
+}
+
+.admin_users_block {
+    margin-top: 80px;
+    margin-bottom: 125px;
+    margin-left: 90px;
+    margin-right: 90px;
+}
+table {
+    border-collapse: collapse;
+    width: 100%;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+}
+
+th,
+td {
+    border: 1px solid black;
+    padding: 8px;
+    text-align: center;
+}
+
+th {
+    background-color: #a16915;
+    font-weight: bold;
+}
+.add_new_item_form {
+    display: flex;
+    flex-direction: column;
+    /* align-items: center; */
+    align-self: center;
+    width: 70%;
+    /* justify-content: center; */
+}
+.modal-content1 h5 {
+    text-transform: uppercase;
+    font-family: "Hoefler Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 115%;
+    letter-spacing: -0.025em;
+    margin: 60px;
+    text-align: center;
+}
+.add_new_item_form h1 {
+    text-transform: uppercase;
+    font-family: "Hoefler Text";
+    font-style: normal;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 115%;
+    letter-spacing: -0.025em;
+    margin: 60px;
+    text-align: center;
+}
+.add_new_item_form input,
+select,
+option {
+    min-width: 473px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+    padding-left: 51px;
+    margin: 15px;
+
+    border: none;
+    background: #0a0a0a;
+    box-shadow: 0px 4px 14px 3px #815615;
+    border-radius: 54px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+
+    color: #fafafa;
+}
+option::content {
+    background: #0a0a0a;
+    box-shadow: 0px 4px 14px 3px #815615;
+    border-radius: 54px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+option:focus {
+    /* border-color: #815615;
+    box-shadow: 0 0 5px rgba(0, 0, 255, 0.5); */
+    background: #0a0a0a;
+    box-shadow: 0px 4px 14px 3px #815615;
+    border-radius: 54px;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    letter-spacing: 0.005em;
+}
+.modal1 {
+    display: none;
+    position: fixed;
+    z-index: 1;
+
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    margin: 0 auto;
+
+    width: 100%;
+    height: 100%;
+    overflow: auto;
+    background-color: #a1691546;
+    backdrop-filter: blur(20px);
+}
+.modal-content1 {
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    position: fixed;
+    display: flex;
+    flex-direction: column;
+    flex-direction: column;
+    background-color: #fefefe;
+    padding-left: 100px;
+    padding-right: 100px;
+    padding-top: 70px;
+    padding-bottom: 60px;
+    box-shadow: 0px 4px 14px 3px #a16915;
+    border-radius: 30px;
+    width: 60%;
+}
+
+.close1 {
+    color: #333333;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close1:hover,
+.close1:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.close2 {
+    color: #333333;
+    text-align: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.close2:hover,
+.close2:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+}
+.admin_edit_block {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+
+.nav-menu {
+    text-align: center;
+}
+
+.header_log {
+    align-items: center;
+    /*margin-top:30px;*/
+    margin: 0px;
+    display: flex;
+    flex-direction: row;
+    justify-content: st;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fafafa;
+}
+.header_log a {
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fafafa;
+}
+
+.header_log a:hover {
+    font-weight: bold;
+}
+
+.log_block {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    font-family: "Avenir Next Cyr";
+    font-style: normal;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+    text-transform: uppercase;
+    text-decoration: none;
+    color: #fafafa;
+}
+.user_name {
+    margin: 10px;
+}
+.block_header {
+    display: flex;
+    flex-direction: row;
+}
+.header_style {
+    display: flex;
+    flex-direction: column;
+}
+.nav_menu_extra {
+    margin: 0px;
+}
+
+.catalog_image_container {
+    width: 500px;
+    margin: 0 auto;
+    position: relative;
+}
+
+.catalog_image_container img {
+    width: 100%;
+    height: auto;
+    display: block;
+}
+
+.catalog_image_container .caption {
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: rgba(0, 0, 0, 0.6);
+    color: white;
+    padding: 10px;
+    width: 100%;
+    text-align: center;
+    box-sizing: border-box;
+}
+
+.white_text{
+    color: #fff;
+}
+
+.bascket_place_head{
+    color: #fafafa;
+    margin-left: 20px;
+}
