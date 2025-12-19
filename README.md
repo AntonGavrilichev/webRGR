@@ -10,3 +10,6 @@ DB_PASSWORD=
 Запуск из корня проекта:
 php artisan serve --port=8000 - в одном терминале
 npm run dev - в другом 
+
+admin@musicstore.com
+admin123
